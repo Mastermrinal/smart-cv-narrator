@@ -1,3 +1,4 @@
+import tataSteelImg from "@/assets/tata-steel-rheology.png";
 import { ProjectCard, type Project } from "./ProjectCard";
 
 const PROJECTS: Project[] = [
@@ -13,6 +14,7 @@ const PROJECTS: Project[] = [
     fullDescription: "Developed a multi-terrain emergency response UAV capable of operating in diverse field conditions. Led the full manufacturing pipeline using laser cutting and MDF fabrication, improving production efficiency by 30%. The project focused on deployability and real-world reliability over conceptual design.",
     techStack: ["SolidWorks", "Laser Cutting", "MDF Fabrication", "Arduino", "Simulink"],
     outcomes: ["Built 2 fully functional prototypes", "30% improvement in production efficiency", "Validated across multiple terrain types", "20+ hrs/week sustained engineering investment"],
+    repo: "https://github.com/Mastermrinal/image_processing",
   },
   {
     id: "piezo",
@@ -34,7 +36,7 @@ const PROJECTS: Project[] = [
     tags: ["ARIMA", "GPR", "Forecasting", "Climate", "Python"],
     description: "Time-series forecasting of Cooling Degree Days for 100 Indian cities spanning 1991–2100.",
     metrics: [{ label: "R²_SCORE", value: "0.89" }, { label: "CITIES", value: "100" }, { label: "HORIZON", value: "2100" }],
-    year: "2024",
+    year: "2025",
     image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80",
     fullDescription: "Research internship at IIT Bombay focused on forecasting energy demand for cooling systems. Modeled Cooling Degree Days across 100 Indian cities using historical and projected climate data (1991–2100). Implemented S-curve, regression, and power law models achieving R² = 0.89.",
     techStack: ["Python", "ARIMA", "GPR", "S-Curve Modeling", "Regression", "Tableau"],
@@ -74,7 +76,7 @@ const PROJECTS: Project[] = [
     description: "Rheological studies on viscoelastic behavior in melt spinning processes at Tata Steel.",
     metrics: [{ label: "ORG", value: "TATA STEEL" }, { label: "PROCESS", value: "MELT SPIN" }, { label: "DOMAIN", value: "MATERIALS" }],
     year: "2023",
-    image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80",
+    image: tataSteelImg,
     fullDescription: "Industry internship at Tata Steel focused on carbon fiber production via melt spinning. Conducted rheological studies to characterize viscoelastic material behavior, providing data to optimize fiber properties for industrial-scale manufacturing.",
     techStack: ["ANSYS", "Rheometry", "Materials Characterization", "MATLAB", "Creo"],
     outcomes: ["Characterized viscoelastic behavior", "Optimized melt spinning parameters", "Industry-scale process insights", "Data fed into production pipeline"],

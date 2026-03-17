@@ -6,6 +6,7 @@ const PUBS = [
     type: "Conference",
     color: "hsl(var(--primary))",
     pdf: "/papers/Harnessing_the_Power_of_Ensemble_Algorithms_for.pdf",
+    doi: "https://doi.org/10.1109/ANTS63515.2024.10898929",
     authors: "Maulik Gupta, Mrinal Choudhary, Divisha Garg, Prashant Singh Rana",
   },
   {
@@ -15,6 +16,7 @@ const PUBS = [
     type: "Conference",
     color: "hsl(var(--accent))",
     pdf: "/papers/AIR_2025.pdf",
+    doi: null,
     authors: "Yash Vardhan, Mrinal Choudhary, Ujjal Deep Singh Jhajj, Jyotindra Narayan, Ashish Singla",
   },
   {
@@ -24,6 +26,7 @@ const PUBS = [
     type: "Conference",
     color: "hsl(40, 100%, 50%)",
     pdf: null,
+    doi: "https://doi.org/10.1109/InC465408.2025.11256487",
     authors: null,
   },
 ];
@@ -66,6 +69,22 @@ export const PublicationsSection = () => (
                   <polyline points="14 2 14 8 20 8"/>
                 </svg>
                 PDF
+              </a>
+            )}
+            {p.doi && (
+              <a
+                href={p.doi}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="label-xs px-2 py-1 rounded-sm transition-all duration-200 hidden sm:flex items-center gap-1"
+                style={{ background: `${p.color}15`, color: p.color, border: `1px solid ${p.color}40` }}
+                title="View DOI"
+              >
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                </svg>
+                DOI
               </a>
             )}
           </div>
