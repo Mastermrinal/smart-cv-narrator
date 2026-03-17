@@ -115,10 +115,6 @@ const Index = () => {
                 <span style={{ color: "hsl(var(--primary))" }}>at the intersection of</span><br />
                 Mechanical Design &amp; Machine Learning.
               </h1>
-              <p className="mt-6 text-sm text-muted-foreground max-w-xl leading-relaxed">
-                Mrinal Choudhary — Robotics Researcher · IIT Bombay · Tata Steel ·
-                3× IEEE/ACM Published · UAV Prototyper · ML Engineer.
-              </p>
               <div className="flex items-center gap-4 mt-6">
                 <a
                   href="mailto:mrinal@example.com"
