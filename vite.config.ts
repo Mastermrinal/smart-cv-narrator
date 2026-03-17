@@ -11,7 +11,9 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
-  base: mode === "production" ? "/smart-cv-narrator/" : "/",
+  // Use relative paths for production so the site works both on GitHub Pages
+  // (repo URL) and when previewing locally.
+  base: mode === "production" ? "./" : "/",
   plugins: [react()],
   resolve: {
     alias: {
