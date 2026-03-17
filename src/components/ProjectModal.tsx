@@ -1,4 +1,4 @@
-import { X, ExternalLink } from "lucide-react";
+import { X, ExternalLink, FileText } from "lucide-react";
 import type { Project } from "./ProjectCard";
 
 interface Props {
