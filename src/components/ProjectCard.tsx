@@ -13,6 +13,7 @@ export interface Project {
   fullDescription: string;
   techStack: string[];
   outcomes: string[];
+  repo?: string;
 }
 
 const CATEGORY_COLORS: Record<string, string> = {

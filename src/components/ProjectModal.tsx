@@ -82,6 +82,20 @@ export const ProjectModal = ({ project, open, onClose }: Props) => {
               ))}
             </ul>
           </div>
+
+          {/* Repo link */}
+          {project.repo && (
+            <a
+              href={project.repo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="label-xs px-3 py-2 rounded-sm flex items-center gap-2 transition-all duration-200 w-fit"
+              style={{ background: "rgba(0,149,255,0.08)", color: "hsl(var(--primary))", border: "1px solid rgba(0,149,255,0.25)" }}
+            >
+              <ExternalLink size={10} strokeWidth={2} />
+              VIEW_REPOSITORY
+            </a>
+          )}
         </div>
       </div>
     </div>
