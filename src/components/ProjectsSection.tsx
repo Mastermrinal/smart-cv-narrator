@@ -1,7 +1,7 @@
 import tataSteelImg from "@/assets/tata-steel-rheology.png";
 import uavAircraftImg from "@/assets/uav-aircraft-design.png";
 import iitBombayImg from "@/assets/iit-bombay-cdd.png";
-import palmProtectionImg from "@/assets/palm-protection-device.svg";
+import palmProtectionImg from "@/assets/palm-protection-device.png";
 import { ProjectCard, type Project } from "./ProjectCard";
 
 const PROJECTS: Project[] = [
