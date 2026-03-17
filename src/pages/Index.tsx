@@ -1,16 +1,143 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { DataRibbon } from "@/components/DataRibbon";
+import { PortfolioNav } from "@/components/PortfolioNav";
+import { AITerminal } from "@/components/AITerminal";
+import { ProjectsSection } from "@/components/ProjectsSection";
+import { PublicationsSection } from "@/components/PublicationsSection";
+import { SkillsSection } from "@/components/SkillsSection";
+import { Github, Linkedin, Mail } from "lucide-react";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const GIF_URL =
+  "https://cdn.dribbble.com/userupload/41747295/file/original-36aa18b6d39725078eadce42d08e3055.gif";
+
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen relative">
+      {/* ── Background GIF ───────────────────────────────────── */}
+      <div
+        className="fixed inset-0 z-[-2]"
+        style={{
+          backgroundImage: `url(${GIF_URL})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      {/* Overlay — 65% obsidian + blur */}
+      <div
+        className="fixed inset-0 z-[-1]"
+        style={{
+          background: "rgba(7,7,12,0.72)",
+          backdropFilter: "blur(64px)",
+        }}
+      />
+
+      {/* ── Top ribbon ───────────────────────────────────────── */}
+      <DataRibbon />
+
+      {/* ── Nav ──────────────────────────────────────────────── */}
+      <PortfolioNav />
+
+      {/* ── Main content ─────────────────────────────────────── */}
+      <main className="max-w-6xl mx-auto px-6 pt-28">
+        {/* Hero */}
+        <section className="py-16 md:py-24 flex flex-col gap-8">
+          {/* Identity */}
+          <div className="fade-in-up">
+            <span className="label-xs text-muted-foreground block mb-4">01 / IDENTITY</span>
+            <h1 className="text-4xl md:text-5xl font-medium tracking-tighter leading-[1.1]">
+              Engineering intelligent systems<br />
+              <span style={{ color: "hsl(var(--primary))" }}>at the intersection of</span><br />
+              Mechanical Design &amp; Machine Learning.
+            </h1>
+            <p className="mt-6 text-sm text-muted-foreground max-w-xl leading-relaxed">
+              Mrinal Choudhary — Robotics Researcher · IIT Bombay · Tata Steel ·
+              3× IEEE/ACM Published · UAV Prototyper · ML Engineer.
+            </p>
+            <div className="flex items-center gap-4 mt-6">
+              <a
+                href="mailto:mrinal@example.com"
+                className="label-xs px-4 py-2 rounded-sm flex items-center gap-2 transition-all duration-200"
+                style={{
+                  background: "hsl(var(--primary))",
+                  color: "hsl(var(--primary-foreground))",
+                }}
+              >
+                <Mail size={11} strokeWidth={1.5} />
+                INITIALIZE_CONTACT
+              </a>
+              <a href="https://github.com" target="_blank" rel="noreferrer"
+                className="p-2 rounded-sm transition-all duration-200 hover:bg-white/5"
+                style={{ color: "hsl(var(--muted-foreground))", border: "1px solid var(--glass-border)" }}>
+                <Github size={14} strokeWidth={1.5} />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer"
+                className="p-2 rounded-sm transition-all duration-200 hover:bg-white/5"
+                style={{ color: "hsl(var(--muted-foreground))", border: "1px solid var(--glass-border)" }}>
+                <Linkedin size={14} strokeWidth={1.5} />
+              </a>
+            </div>
+          </div>
+
+          {/* Terminal */}
+          <div className="fade-in-up" style={{ animationDelay: "150ms" }}>
+            <AITerminal />
+          </div>
+        </section>
+
+        {/* Projects */}
+        <ProjectsSection />
+
+        {/* Publications */}
+        <PublicationsSection />
+
+        {/* Skills */}
+        <SkillsSection />
+
+        {/* About / Contact */}
+        <section id="about" className="py-20 border-t" style={{ borderColor: "var(--glass-border)" }}>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <span className="label-xs text-muted-foreground block mb-2">05 / ABOUT</span>
+              <h2 className="text-3xl font-medium tracking-tighter mb-4">The Researcher</h2>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                Mechanical Engineer turned Robotics Researcher. I've always been fascinated by how
+                machines can <em>sense, decide, and act</em>. What started as curiosity evolved into
+                building UAVs, piezoelectric sensors, and ML pipelines.
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                I thrive in interdisciplinary environments where mechanical fundamentals meet
+                intelligent systems — and where ideas turn into real, deployable prototypes.
+              </p>
+            </div>
+            <div id="contact">
+              <span className="label-xs text-muted-foreground block mb-2">06 / CONTACT</span>
+              <h2 className="text-3xl font-medium tracking-tighter mb-4">Execute Contact</h2>
+              <div className="flex flex-col gap-3">
+                {[
+                  { label: "EMAIL", value: "mrinal.choudhary@example.com", href: "mailto:mrinal.choudhary@example.com" },
+                  { label: "LINKEDIN", value: "linkedin.com/in/mrinalchoudhary", href: "https://linkedin.com" },
+                  { label: "GITHUB", value: "github.com/mrinalchoudhary", href: "https://github.com" },
+                ].map(({ label, value, href }) => (
+                  <a key={label} href={href} target="_blank" rel="noreferrer"
+                    className="glass rounded-inner px-4 py-3 flex items-center justify-between group transition-all duration-200 hover:border-primary"
+                  >
+                    <span className="label-xs text-muted-foreground">{label}</span>
+                    <span className="font-mono text-xs" style={{ color: "hsl(var(--primary))" }}>{value}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="py-8 border-t flex items-center justify-between" style={{ borderColor: "var(--glass-border)" }}>
+          <span className="label-xs text-muted-foreground">MRINAL_CHOUDHARY_OS v1.0 © 2025</span>
+          <span className="label-xs text-muted-foreground">LOC: 19.1334°N 72.9133°E · IIT BOMBAY</span>
+        </footer>
+      </main>
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
