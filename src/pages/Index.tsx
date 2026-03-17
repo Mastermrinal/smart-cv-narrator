@@ -43,39 +43,105 @@ const Index = () => {
         {/* Hero */}
         <section className="py-16 md:py-24 flex flex-col gap-8">
           {/* Identity */}
-          <div className="fade-in-up">
-            <span className="label-xs text-muted-foreground block mb-4">01 / IDENTITY</span>
-            <h1 className="text-4xl md:text-5xl font-medium tracking-tighter leading-[1.1]">
-              Engineering intelligent systems<br />
-              <span style={{ color: "hsl(var(--primary))" }}>at the intersection of</span><br />
-              Mechanical Design &amp; Machine Learning.
-            </h1>
-            <p className="mt-6 text-sm text-muted-foreground max-w-xl leading-relaxed">
-              Mrinal Choudhary — Robotics Researcher · IIT Bombay · Tata Steel ·
-              3× IEEE/ACM Published · UAV Prototyper · ML Engineer.
-            </p>
-            <div className="flex items-center gap-4 mt-6">
-              <a
-                href="mailto:mrinal@example.com"
-                className="label-xs px-4 py-2 rounded-sm flex items-center gap-2 transition-all duration-200"
+          <div className="fade-in-up flex flex-col md:flex-row items-start gap-10">
+            {/* Futuristic Photo Frame */}
+            <div className="relative flex-shrink-0 self-start">
+              {/* Corner accents */}
+              <div className="absolute -top-[6px] -left-[6px] w-5 h-5 border-t-2 border-l-2 z-10" style={{ borderColor: "hsl(var(--primary))" }} />
+              <div className="absolute -top-[6px] -right-[6px] w-5 h-5 border-t-2 border-r-2 z-10" style={{ borderColor: "hsl(var(--primary))" }} />
+              <div className="absolute -bottom-[6px] -left-[6px] w-5 h-5 border-b-2 border-l-2 z-10" style={{ borderColor: "hsl(var(--primary))" }} />
+              <div className="absolute -bottom-[6px] -right-[6px] w-5 h-5 border-b-2 border-r-2 z-10" style={{ borderColor: "hsl(var(--primary))" }} />
+              {/* Scan line animation */}
+              <div className="absolute inset-0 z-10 overflow-hidden rounded-sm pointer-events-none">
+                <div
+                  className="absolute w-full h-[2px] opacity-30"
+                  style={{
+                    background: "linear-gradient(90deg, transparent, hsl(var(--primary)), transparent)",
+                    animation: "scanline 3s linear infinite",
+                  }}
+                />
+              </div>
+              {/* Side labels */}
+              <div
+                className="absolute -left-7 top-1/2 -translate-y-1/2 label-xs rotate-[-90deg] tracking-widest"
+                style={{ color: "hsl(var(--primary))", fontSize: "9px" }}
+              >
+                ID_VERIFIED
+              </div>
+              <div
+                className="absolute -right-8 top-1/2 -translate-y-1/2 label-xs rotate-90 tracking-widest"
+                style={{ color: "hsl(var(--muted-foreground))", fontSize: "9px" }}
+              >
+                MRINAL_OS
+              </div>
+              {/* Image */}
+              <div
+                className="relative overflow-hidden"
                 style={{
-                  background: "hsl(var(--primary))",
-                  color: "hsl(var(--primary-foreground))",
+                  width: "180px",
+                  height: "220px",
+                  border: "1px solid var(--glass-border)",
+                  boxShadow: "0 0 24px hsl(var(--primary) / 0.25), inset 0 0 24px hsl(var(--primary) / 0.04)",
                 }}
               >
-                <Mail size={11} strokeWidth={1.5} />
-                INITIALIZE_CONTACT
-              </a>
-              <a href="https://github.com" target="_blank" rel="noreferrer"
-                className="p-2 rounded-sm transition-all duration-200 hover:bg-white/5"
-                style={{ color: "hsl(var(--muted-foreground))", border: "1px solid var(--glass-border)" }}>
-                <Github size={14} strokeWidth={1.5} />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer"
-                className="p-2 rounded-sm transition-all duration-200 hover:bg-white/5"
-                style={{ color: "hsl(var(--muted-foreground))", border: "1px solid var(--glass-border)" }}>
-                <Linkedin size={14} strokeWidth={1.5} />
-              </a>
+                <img
+                  src={mrinalPhoto}
+                  alt="Mrinal Choudhary"
+                  className="w-full h-full object-cover object-top"
+                  style={{ filter: "contrast(1.08) brightness(0.92)" }}
+                />
+                {/* Overlay gradient at bottom */}
+                <div
+                  className="absolute bottom-0 left-0 right-0 h-10"
+                  style={{
+                    background: "linear-gradient(to top, hsl(var(--background) / 0.7), transparent)",
+                  }}
+                />
+                {/* Bottom label */}
+                <div
+                  className="absolute bottom-2 left-0 right-0 text-center label-xs"
+                  style={{ color: "hsl(var(--primary))", fontSize: "8px", letterSpacing: "0.15em" }}
+                >
+                  MRINAL_CHOUDHARY.exe
+                </div>
+              </div>
+            </div>
+
+            {/* Text content */}
+            <div className="flex-1">
+              <span className="label-xs text-muted-foreground block mb-4">01 / IDENTITY</span>
+              <h1 className="text-4xl md:text-5xl font-medium tracking-tighter leading-[1.1]">
+                Engineering intelligent systems<br />
+                <span style={{ color: "hsl(var(--primary))" }}>at the intersection of</span><br />
+                Mechanical Design &amp; Machine Learning.
+              </h1>
+              <p className="mt-6 text-sm text-muted-foreground max-w-xl leading-relaxed">
+                Mrinal Choudhary — Robotics Researcher · IIT Bombay · Tata Steel ·
+                3× IEEE/ACM Published · UAV Prototyper · ML Engineer.
+              </p>
+              <div className="flex items-center gap-4 mt-6">
+                <a
+                  href="mailto:mrinal@example.com"
+                  className="label-xs px-4 py-2 rounded-sm flex items-center gap-2 transition-all duration-200"
+                  style={{
+                    background: "hsl(var(--primary))",
+                    color: "hsl(var(--primary-foreground))",
+                  }}
+                >
+                  <Mail size={11} strokeWidth={1.5} />
+                  INITIALIZE_CONTACT
+                </a>
+                <a href="https://github.com" target="_blank" rel="noreferrer"
+                  className="p-2 rounded-sm transition-all duration-200 hover:bg-white/5"
+                  style={{ color: "hsl(var(--muted-foreground))", border: "1px solid var(--glass-border)" }}>
+                  <Github size={14} strokeWidth={1.5} />
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer"
+                  className="p-2 rounded-sm transition-all duration-200 hover:bg-white/5"
+                  style={{ color: "hsl(var(--muted-foreground))", border: "1px solid var(--glass-border)" }}>
+                  <Linkedin size={14} strokeWidth={1.5} />
+                </a>
+              </div>
             </div>
           </div>
 
