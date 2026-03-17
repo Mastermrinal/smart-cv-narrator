@@ -1,5 +1,6 @@
 import tataSteelImg from "@/assets/tata-steel-rheology.png";
 import uavAircraftImg from "@/assets/uav-aircraft-design.png";
+import iitBombayImg from "@/assets/iit-bombay-cdd.png";
 import { ProjectCard, type Project } from "./ProjectCard";
 
 const PROJECTS: Project[] = [
@@ -15,8 +16,6 @@ const PROJECTS: Project[] = [
     fullDescription: "Developed a multi-terrain emergency response UAV capable of operating in diverse field conditions. Led the full manufacturing pipeline using laser cutting and MDF fabrication, improving production efficiency by 60%. The project focused on deployability and real-world reliability over conceptual design, including custom aircraft design with optimized aerodynamic frame.",
     techStack: ["SolidWorks", "Laser Cutting", "MDF Fabrication", "Arduino", "Simulink"],
     outcomes: ["Built 2 fully functional prototypes", "60% improvement in production efficiency", "Validated across multiple terrain types", "20+ hrs/week sustained engineering investment", "Custom aircraft structural design"],
-    repo: "https://github.com/Mastermrinal/image_processing",
-    driveLink: "https://drive.google.com/file/d/1xIbQt8mGPozUsKqNy29ugZxTL5T3Tr3X/view?usp=sharing",
     pdf: "/papers/G9_Capstone_Project_Report.pdf",
   },
   {
@@ -40,10 +39,11 @@ const PROJECTS: Project[] = [
     description: "Time-series forecasting of Cooling Degree Days for 100 Indian cities spanning 1991–2100.",
     metrics: [{ label: "R²_SCORE", value: "0.89" }, { label: "CITIES", value: "100" }, { label: "HORIZON", value: "2100" }],
     year: "2025",
-    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80",
+    image: iitBombayImg,
     fullDescription: "Research internship at IIT Bombay focused on forecasting energy demand for cooling systems. Modeled Cooling Degree Days across 100 Indian cities using historical and projected climate data (1991–2100). Implemented S-curve, regression, and power law models achieving R² = 0.89.",
     techStack: ["Python", "ARIMA", "GPR", "S-Curve Modeling", "Regression", "Tableau"],
     outcomes: ["R² = 0.89 forecasting accuracy", "100 Indian cities modeled", "Timeline spanning 1991–2100", "Sustainability policy implications"],
+    pdf: "/papers/IIT_BOMBAY.pdf",
   },
   {
     id: "cnn",
@@ -57,6 +57,7 @@ const PROJECTS: Project[] = [
     fullDescription: "Built a CNN-based object detection pipeline for real-time identification and classification of plastic waste. The system was designed for environmental monitoring applications, combining deep learning with practical deployment considerations.",
     techStack: ["Python", "TensorFlow", "CNN", "OpenCV", "NumPy"],
     outcomes: ["Real-time detection pipeline deployed", "High accuracy on plastic waste classes", "Environmental monitoring application", "Optimized for edge deployment"],
+    repo: "https://github.com/Mastermrinal/image_processing",
   },
   {
     id: "terrain",

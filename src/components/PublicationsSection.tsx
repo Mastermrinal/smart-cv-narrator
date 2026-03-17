@@ -17,6 +17,7 @@ const PUBS = [
     color: "hsl(var(--accent))",
     pdf: "/papers/AIR_2025.pdf",
     doi: null,
+    driveLink: "https://drive.google.com/file/d/1xIbQt8mGPozUsKqNy29ugZxTL5T3Tr3X/view?usp=sharing",
     authors: "Yash Vardhan, Mrinal Choudhary, Ujjal Deep Singh Jhajj, Jyotindra Narayan, Ashish Singla",
   },
   {
