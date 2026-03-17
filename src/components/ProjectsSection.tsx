@@ -1,4 +1,5 @@
 import tataSteelImg from "@/assets/tata-steel-rheology.png";
+import uavAircraftImg from "@/assets/uav-aircraft-design.png";
 import { ProjectCard, type Project } from "./ProjectCard";
 
 const PROJECTS: Project[] = [
@@ -6,15 +7,17 @@ const PROJECTS: Project[] = [
     id: "uav",
     title: "Multi-Terrain Emergency Response UAV",
     category: "Robotics",
-    tags: ["UAV", "Laser Cutting", "Prototyping", "MDF"],
+    tags: ["UAV", "Laser Cutting", "Prototyping", "MDF", "Aircraft Design"],
     description: "Deployable multi-terrain UAV for emergency scenarios. Built 2 working prototypes via laser cutting.",
-    metrics: [{ label: "EFFICIENCY", value: "+30%" }, { label: "PROTOTYPES", value: "2" }, { label: "HRS/WEEK", value: "20+" }],
+    metrics: [{ label: "EFFICIENCY", value: "+60%" }, { label: "PROTOTYPES", value: "2" }, { label: "HRS/WEEK", value: "20+" }],
     year: "2024",
-    image: "https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=600&q=80",
-    fullDescription: "Developed a multi-terrain emergency response UAV capable of operating in diverse field conditions. Led the full manufacturing pipeline using laser cutting and MDF fabrication, improving production efficiency by 30%. The project focused on deployability and real-world reliability over conceptual design.",
+    image: uavAircraftImg,
+    fullDescription: "Developed a multi-terrain emergency response UAV capable of operating in diverse field conditions. Led the full manufacturing pipeline using laser cutting and MDF fabrication, improving production efficiency by 60%. The project focused on deployability and real-world reliability over conceptual design, including custom aircraft design with optimized aerodynamic frame.",
     techStack: ["SolidWorks", "Laser Cutting", "MDF Fabrication", "Arduino", "Simulink"],
-    outcomes: ["Built 2 fully functional prototypes", "30% improvement in production efficiency", "Validated across multiple terrain types", "20+ hrs/week sustained engineering investment"],
+    outcomes: ["Built 2 fully functional prototypes", "60% improvement in production efficiency", "Validated across multiple terrain types", "20+ hrs/week sustained engineering investment", "Custom aircraft structural design"],
     repo: "https://github.com/Mastermrinal/image_processing",
+    driveLink: "https://drive.google.com/file/d/1xIbQt8mGPozUsKqNy29ugZxTL5T3Tr3X/view?usp=sharing",
+    pdf: "/papers/G9_Capstone_Project_Report.pdf",
   },
   {
     id: "piezo",
