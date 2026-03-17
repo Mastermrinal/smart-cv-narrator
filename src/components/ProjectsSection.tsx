@@ -1,4 +1,5 @@
 import tataSteelImg from "@/assets/tata-steel-rheology.png";
+import uavAircraftImg from "@/assets/uav-aircraft-design.png";
 import { ProjectCard, type Project } from "./ProjectCard";
 
 const PROJECTS: Project[] = [

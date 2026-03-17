@@ -14,6 +14,8 @@ export interface Project {
   techStack: string[];
   outcomes: string[];
   repo?: string;
+  driveLink?: string;
+  pdf?: string;
 }
 
 const CATEGORY_COLORS: Record<string, string> = {
