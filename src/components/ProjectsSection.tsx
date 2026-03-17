@@ -76,7 +76,7 @@ const PROJECTS: Project[] = [
     description: "Rheological studies on viscoelastic behavior in melt spinning processes at Tata Steel.",
     metrics: [{ label: "ORG", value: "TATA STEEL" }, { label: "PROCESS", value: "MELT SPIN" }, { label: "DOMAIN", value: "MATERIALS" }],
     year: "2023",
-    image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80",
+    image: tataSteelImg,
     fullDescription: "Industry internship at Tata Steel focused on carbon fiber production via melt spinning. Conducted rheological studies to characterize viscoelastic material behavior, providing data to optimize fiber properties for industrial-scale manufacturing.",
     techStack: ["ANSYS", "Rheometry", "Materials Characterization", "MATLAB", "Creo"],
     outcomes: ["Characterized viscoelastic behavior", "Optimized melt spinning parameters", "Industry-scale process insights", "Data fed into production pipeline"],
