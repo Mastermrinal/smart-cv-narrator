@@ -1,3 +1,4 @@
+import tataSteelImg from "@/assets/tata-steel-rheology.png";
 import { ProjectCard, type Project } from "./ProjectCard";
 
 const PROJECTS: Project[] = [

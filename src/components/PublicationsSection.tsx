@@ -6,6 +6,7 @@ const PUBS = [
     type: "Conference",
     color: "hsl(var(--primary))",
     pdf: "/papers/Harnessing_the_Power_of_Ensemble_Algorithms_for.pdf",
+    doi: "https://doi.org/10.1109/ANTS63515.2024.10898929",
     authors: "Maulik Gupta, Mrinal Choudhary, Divisha Garg, Prashant Singh Rana",
   },
   {
@@ -15,6 +16,7 @@ const PUBS = [
     type: "Conference",
     color: "hsl(var(--accent))",
     pdf: "/papers/AIR_2025.pdf",
+    doi: null,
     authors: "Yash Vardhan, Mrinal Choudhary, Ujjal Deep Singh Jhajj, Jyotindra Narayan, Ashish Singla",
   },
   {
@@ -24,6 +26,7 @@ const PUBS = [
     type: "Conference",
     color: "hsl(40, 100%, 50%)",
     pdf: null,
+    doi: "https://doi.org/10.1109/InC465408.2025.11256487",
     authors: null,
   },
 ];
