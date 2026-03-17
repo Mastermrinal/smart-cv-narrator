@@ -11,10 +11,17 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
+  base: mode === "production" ? "/smart-cv-narrator/" : "/",
   plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  build: {
+    // Force Vite to emit assets (like small PNGs) as separate files
+    // instead of inlining them as data URIs. This makes them appear in
+    // dist/assets and is helpful for verifying deployment artifacts.
+    assetsInlineLimit: 0,
   },
 }));
