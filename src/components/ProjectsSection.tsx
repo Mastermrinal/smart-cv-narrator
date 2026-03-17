@@ -36,7 +36,7 @@ const PROJECTS: Project[] = [
     tags: ["ARIMA", "GPR", "Forecasting", "Climate", "Python"],
     description: "Time-series forecasting of Cooling Degree Days for 100 Indian cities spanning 1991–2100.",
     metrics: [{ label: "R²_SCORE", value: "0.89" }, { label: "CITIES", value: "100" }, { label: "HORIZON", value: "2100" }],
-    year: "2024",
+    year: "2025",
     image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80",
     fullDescription: "Research internship at IIT Bombay focused on forecasting energy demand for cooling systems. Modeled Cooling Degree Days across 100 Indian cities using historical and projected climate data (1991–2100). Implemented S-curve, regression, and power law models achieving R² = 0.89.",
     techStack: ["Python", "ARIMA", "GPR", "S-Curve Modeling", "Regression", "Tableau"],
