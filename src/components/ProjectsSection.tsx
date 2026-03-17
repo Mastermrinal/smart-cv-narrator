@@ -14,6 +14,7 @@ const PROJECTS: Project[] = [
     fullDescription: "Developed a multi-terrain emergency response UAV capable of operating in diverse field conditions. Led the full manufacturing pipeline using laser cutting and MDF fabrication, improving production efficiency by 30%. The project focused on deployability and real-world reliability over conceptual design.",
     techStack: ["SolidWorks", "Laser Cutting", "MDF Fabrication", "Arduino", "Simulink"],
     outcomes: ["Built 2 fully functional prototypes", "30% improvement in production efficiency", "Validated across multiple terrain types", "20+ hrs/week sustained engineering investment"],
+    repo: "https://github.com/Mastermrinal/image_processing",
   },
   {
     id: "piezo",
