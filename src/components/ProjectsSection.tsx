@@ -68,7 +68,7 @@ const PROJECTS: Project[] = [
     description: "Design patent for palm protection device. D. Choudhury, M. Chaudhury (2025). Patent Application No. 202511074968.",
     metrics: [{ label: "STATUS", value: "APPLIED" }, { label: "YEAR", value: "2025" }, { label: "MATERIALS", value: "PLA/TPU/TPE" }],
     year: "2025",
-    image: "https://chatgpt.com/backend-api/estuary/content?id=file_000000005a0071faad2dc09e171069e9&ts=492718&p=fs&cid=1&sig=c0efdb283842f0ef5c6ed3d0372a97637fa297555d3faa3e572ded3aa4a6ca25&v=0",
+    image: palmProtectionImg,
     fullDescription: `Developed and prototyped an innovative palm protection device with a pending patent application (No. 202511074968).
 
 • Worked at the Center for Excellence in Emerging Materials in Impact Resistant Materials.

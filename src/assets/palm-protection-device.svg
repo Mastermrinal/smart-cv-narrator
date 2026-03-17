@@ -1,43 +1,50 @@
 <svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Palm protection device">
   <defs>
-    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#22c55e" />
-      <stop offset="100%" stop-color="#0ea5e9" />
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e5e7eb" />
+      <stop offset="40%" stop-color="#cbd5e1" />
+      <stop offset="80%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#94a3b8" />
     </linearGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="12" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000" flood-opacity="0.25" />
     </filter>
   </defs>
 
-  <rect width="800" height="450" rx="36" fill="#050814" />
-  <rect x="80" y="70" width="640" height="310" rx="30" fill="#0b1220" />
+  <rect width="800" height="450" rx="36" fill="#0b1220" />
+  <rect x="60" y="60" width="680" height="330" rx="32" fill="#0f172a" />
 
-  <!-- Palm outline -->
+  <!-- 3D-like part body -->
   <path
-    d="M320 290c0-70 48-110 80-110s80 40 80 110v40H320v-40z"
-    fill="none"
-    stroke="url(#grad)"
-    stroke-width="24"
-    filter="url(#glow)"
+    d="M200 270c0-70 100-130 220-130s220 60 220 130v70H200v-70z"
+    fill="url(#steel)"
+    filter="url(#shadow)"
   />
 
-  <!-- Finger slots -->
-  <g stroke="url(#grad)" stroke-width="18" stroke-linecap="round" filter="url(#glow)">
-    <line x1="360" y1="185" x2="360" y2="140" />
-    <line x1="400" y1="180" x2="400" y2="135" />
-    <line x1="440" y1="185" x2="440" y2="140" />
+  <!-- Facets -->
+  <path d="M240 270c0-40 80-75 160-75s160 35 160 75" fill="none" stroke="#e2e8f0" stroke-width="2" opacity="0.45" />
+  <path d="M260 300c0-25 120-60 200-50" fill="none" stroke="#e2e8f0" stroke-width="1.5" opacity="0.35" />
+
+  <!-- Detail holes -->
+  <g fill="#f1f5f9" opacity="0.65">
+    <circle cx="360" cy="290" r="12" />
+    <circle cx="420" cy="300" r="10" />
+    <circle cx="480" cy="285" r="11" />
   </g>
 
-  <!-- Highlight curve -->
+  <!-- Gloss highlight -->
   <path
-    d="M300 270c20-40 100-40 140 0"
+    d="M220 240c70-40 260-45 340 0"
     fill="none"
-    stroke="#f8fafc"
-    stroke-width="8"
+    stroke="url(#shine)"
+    stroke-width="40"
+    stroke-linecap="round"
     opacity="0.7"
   />
 
