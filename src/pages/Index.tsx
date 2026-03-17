@@ -5,6 +5,7 @@ import { ProjectsSection } from "@/components/ProjectsSection";
 import { PublicationsSection } from "@/components/PublicationsSection";
 import { SkillsSection } from "@/components/SkillsSection";
 import { Github, Linkedin, Mail } from "lucide-react";
+import mrinalPhoto from "@/assets/mrinal-photo.jpeg";
 
 const GIF_URL =
   "https://cdn.dribbble.com/userupload/41747295/file/original-36aa18b6d39725078eadce42d08e3055.gif";
