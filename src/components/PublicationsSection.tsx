@@ -72,6 +72,21 @@ export const PublicationsSection = () => (
                 PDF
               </a>
             )}
+            {(p as any).driveLink && (
+              <a
+                href={(p as any).driveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="label-xs px-2 py-1 rounded-sm transition-all duration-200 hidden sm:flex items-center gap-1"
+                style={{ background: "hsl(142 71% 45% / 0.15)", color: "hsl(142 71% 45%)", border: "1px solid hsl(142 71% 45% / 0.4)" }}
+                title="View on Drive"
+              >
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                DRIVE
+              </a>
+            )}
             {p.doi && (
               <a
                 href={p.doi}
