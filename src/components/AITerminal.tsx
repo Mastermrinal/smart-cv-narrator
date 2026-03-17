@@ -51,7 +51,7 @@ This system was designed for fault detection in industrial machinery, helping re
 
   • Built a CNN-based object detection system for real-time plastic detection
   • Developed time-series forecasting models (ARIMA, GPR) for financial prediction
-  • Published research on ensemble learning and terrain classification in robotics
+  • Published research on ensemble learning and applied it to real-world prototypes
 
 My approach: AI is a tool — not the goal. The goal is solving real problems.`,
 
@@ -79,13 +79,13 @@ I conducted rheological studies to understand viscoelastic behavior, helping opt
 
 I conducted rheological studies to understand viscoelastic behavior, helping optimize material properties for industrial applications.`,
 
-  "have you published any research": `Yes, I've published multiple research papers:
+  "have you published any research": `Yes, I've published multiple research works and filed patent applications:
 
   • IEEE ANTS 2024: Ensemble learning for diabetes prediction
-  • AIR 2025: Terrain classification in legged robots
+  • Patent Application 202511074968: Palm protection device (medical prototype)
   • IEEE InC4 2025: Fraud detection using ML
 
-My research focuses on applying machine learning to real-world systems.`,
+My research focuses on applying technology to real-world systems.`,
 
   "publications": `Yes, I've published multiple research papers:
 

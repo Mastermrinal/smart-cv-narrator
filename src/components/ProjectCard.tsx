@@ -47,7 +47,7 @@ export const ProjectCard = ({ project, delay = 0 }: Props) => {
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover filter grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105"
+            className="w-full h-full object-contain filter grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105"
           />
           {/* Category badge */}
           <div className="absolute top-3 left-3">

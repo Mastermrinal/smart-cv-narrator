@@ -1,6 +1,7 @@
 import tataSteelImg from "@/assets/tata-steel-rheology.png";
 import uavAircraftImg from "@/assets/uav-aircraft-design.png";
 import iitBombayImg from "@/assets/iit-bombay-cdd.png";
+import palmProtectionImg from "@/assets/palm-protection-device.svg";
 import { ProjectCard, type Project } from "./ProjectCard";
 
 const PROJECTS: Project[] = [
@@ -60,17 +61,21 @@ const PROJECTS: Project[] = [
     repo: "https://github.com/Mastermrinal/image_processing",
   },
   {
-    id: "terrain",
-    title: "Terrain Classification — Legged Robots",
+    id: "palm-protection",
+    title: "Palm Protection Device",
     category: "Research",
-    tags: ["Ensemble Learning", "Robotics", "Classification", "AIR 2025"],
-    description: "Published research on ML-driven terrain classification to guide adaptive locomotion in legged robots.",
-    metrics: [{ label: "VENUE", value: "AIR 2025" }, { label: "METHOD", value: "ENSEMBLE" }, { label: "STATUS", value: "PUBLISHED" }],
+    tags: ["Medical Devices", "3D Printing", "PLA", "TPU", "TPE"],
+    description: "Design patent for palm protection device. D. Choudhury, M. Chaudhury (2025). Patent Application No. 202511074968.",
+    metrics: [{ label: "STATUS", value: "APPLIED" }, { label: "YEAR", value: "2025" }, { label: "MATERIALS", value: "PLA/TPU/TPE" }],
     year: "2025",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&q=80",
-    fullDescription: "Published research paper at AIR 2025 on using ensemble machine learning methods for terrain classification in legged robotic systems. The work enables robots to autonomously adapt their locomotion strategy based on detected surface type.",
-    techStack: ["Python", "Ensemble Learning", "Scikit-learn", "MATLAB", "ROS"],
-    outcomes: ["Published at AIR 2025", "Novel ensemble approach for terrain sensing", "Validated on multiple terrain types", "Enables adaptive robot locomotion"],
+    image: "https://chatgpt.com/backend-api/estuary/content?id=file_000000005a0071faad2dc09e171069e9&ts=492718&p=fs&cid=1&sig=c0efdb283842f0ef5c6ed3d0372a97637fa297555d3faa3e572ded3aa4a6ca25&v=0",
+    fullDescription: `Developed and prototyped an innovative palm protection device with a pending patent application (No. 202511074968).
+
+• Worked at the Center for Excellence in Emerging Materials in Impact Resistant Materials.
+• Contributed to the research, prototyping and early-stage testing of innovative medical devices for topical pain relief.
+• Designed and fabricated prototypes using 3D printing technologies with materials - PLA, TPU, and TPE.`,
+    techStack: ["3D Printing", "PLA", "TPU", "TPE", "Prototyping"],
+    outcomes: ["Patent application filed (202511074968)", "Prototypes fabricated in PLA/TPU/TPE", "Medical device testing for topical pain relief"],
   },
   {
     id: "carbon",
