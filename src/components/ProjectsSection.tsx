@@ -4,8 +4,8 @@ import iitBombayImg from "@/assets/iit-bombay-cdd.png";
 import palmProtectionImg from "@/assets/palm-protection-device.png";
 import { ProjectCard, type Project } from "./ProjectCard";
 import palm from "../assets/palm.png";
-import cnn2 from "/workspaces/smart-cv-narrator/src/assets/cnn2.png";
-import p from "/workspaces/smart-cv-narrator/src/assets/p.jpg";
+import cnn2 from "../assets/cnn2.png";
+import p from "../assets/p.jpg";
 
 const PROJECTS: Project[] = [
   {
@@ -30,7 +30,7 @@ const PROJECTS: Project[] = [
     description: "Industrial-grade fault detection sensor for 300–400 Hz vibration analysis in machinery.",
     metrics: [{ label: "FREQ_RANGE", value: "300–400Hz" }, { label: "COST", value: "LOW" }, { label: "APP", value: "INDUSTRIAL" }],
     year: "2023",
-    image: "src/assets/p.jpg",
+    image: p,
     fullDescription: "Designed and built a low-cost piezoelectric accelerometer capable of detecting vibration frequencies between 300–400 Hz. The system enables early fault detection in industrial machinery, significantly reducing failure risk through continuous vibration monitoring.",
     techStack: ["Piezoelectric Sensors", "Signal Processing", "Arduino", "MATLAB", "Tinkercad"],
     outcomes: ["300–400 Hz detection range achieved", "Validated for industrial fault detection", "Low-cost design enabling wide deployment", "Early vibration anomaly identification"],
@@ -58,7 +58,7 @@ const PROJECTS: Project[] = [
     description: "Convolutional neural network pipeline for real-time plastic waste detection and classification.",
     metrics: [{ label: "TYPE", value: "CNN" }, { label: "MODE", value: "REAL-TIME" }, { label: "DOMAIN", value: "ENV" }],
     year: "2023",
-    image: "src/assets/cnn2.png",
+    image: cnn2,
     fullDescription: "Built a CNN-based object detection pipeline for real-time identification and classification of plastic waste. The system was designed for environmental monitoring applications, combining deep learning with practical deployment considerations.",
     techStack: ["Python", "TensorFlow", "CNN", "OpenCV", "NumPy"],
     outcomes: ["Real-time detection pipeline deployed", "High accuracy on plastic waste classes", "Environmental monitoring application", "Optimized for edge deployment"],
