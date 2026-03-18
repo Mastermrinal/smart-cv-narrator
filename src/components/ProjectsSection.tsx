@@ -3,6 +3,9 @@ import uavAircraftImg from "@/assets/uav-aircraft-design.png";
 import iitBombayImg from "@/assets/iit-bombay-cdd.png";
 import palmProtectionImg from "@/assets/palm-protection-device.png";
 import { ProjectCard, type Project } from "./ProjectCard";
+import palm from "../assets/palm.png";
+import cnn2 from "/workspaces/smart-cv-narrator/src/assets/cnn2.png";
+import p from "/workspaces/smart-cv-narrator/src/assets/p.jpg";
 
 const PROJECTS: Project[] = [
   {
@@ -27,10 +30,11 @@ const PROJECTS: Project[] = [
     description: "Industrial-grade fault detection sensor for 300–400 Hz vibration analysis in machinery.",
     metrics: [{ label: "FREQ_RANGE", value: "300–400Hz" }, { label: "COST", value: "LOW" }, { label: "APP", value: "INDUSTRIAL" }],
     year: "2023",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80",
+    image: "src/assets/p.jpg",
     fullDescription: "Designed and built a low-cost piezoelectric accelerometer capable of detecting vibration frequencies between 300–400 Hz. The system enables early fault detection in industrial machinery, significantly reducing failure risk through continuous vibration monitoring.",
     techStack: ["Piezoelectric Sensors", "Signal Processing", "Arduino", "MATLAB", "Tinkercad"],
     outcomes: ["300–400 Hz detection range achieved", "Validated for industrial fault detection", "Low-cost design enabling wide deployment", "Early vibration anomaly identification"],
+    pdf:"/papers/recommendation_letter_Mrinal.pdf"
   },
   {
     id: "energy",
@@ -44,7 +48,7 @@ const PROJECTS: Project[] = [
     fullDescription: "Research internship at IIT Bombay focused on forecasting energy demand for cooling systems. Modeled Cooling Degree Days across 100 Indian cities using historical and projected climate data (1991–2100). Implemented S-curve, regression, and power law models achieving R² = 0.89.",
     techStack: ["Python", "ARIMA", "GPR", "S-Curve Modeling", "Regression", "Tableau"],
     outcomes: ["R² = 0.89 forecasting accuracy", "100 Indian cities modeled", "Timeline spanning 1991–2100", "Sustainability policy implications"],
-    pdf: "/papers/IIT_BOMBAY.pdf",
+    pdf: "public/papers/IIT_BOMBAY.pdf",
   },
   {
     id: "cnn",
@@ -54,7 +58,7 @@ const PROJECTS: Project[] = [
     description: "Convolutional neural network pipeline for real-time plastic waste detection and classification.",
     metrics: [{ label: "TYPE", value: "CNN" }, { label: "MODE", value: "REAL-TIME" }, { label: "DOMAIN", value: "ENV" }],
     year: "2023",
-    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&q=80",
+    image: "src/assets/cnn2.png",
     fullDescription: "Built a CNN-based object detection pipeline for real-time identification and classification of plastic waste. The system was designed for environmental monitoring applications, combining deep learning with practical deployment considerations.",
     techStack: ["Python", "TensorFlow", "CNN", "OpenCV", "NumPy"],
     outcomes: ["Real-time detection pipeline deployed", "High accuracy on plastic waste classes", "Environmental monitoring application", "Optimized for edge deployment"],
@@ -68,7 +72,7 @@ const PROJECTS: Project[] = [
     description: "Design patent for palm protection device. D. Choudhury, M. Chaudhury (2025). Patent Application No. 202511074968.",
     metrics: [{ label: "STATUS", value: "APPLIED" }, { label: "YEAR", value: "2025" }, { label: "MATERIALS", value: "PLA/TPU/TPE" }],
     year: "2025",
-    image: palmProtectionImg,
+    image: palm,
     fullDescription: `Developed and prototyped an innovative palm protection device with a pending patent application (No. 202511074968).
 
 • Worked at the Center for Excellence in Emerging Materials in Impact Resistant Materials.

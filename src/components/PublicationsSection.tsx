@@ -29,6 +29,7 @@ const PUBS = [
     pdf: null,
     doi: "https://doi.org/10.1109/InC465408.2025.11256487",
     authors: null,
+    certificate_link: "/workspaces/smart-cv-narrator/public/Certificates/1287_Mrinal Chaudhary_InC4-2025 (1).pdf",
   },
 ];
 

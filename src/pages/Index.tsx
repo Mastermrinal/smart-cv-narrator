@@ -6,7 +6,8 @@ import { PublicationsSection } from "@/components/PublicationsSection";
 import { SkillsSection } from "@/components/SkillsSection";
 import { Github, Linkedin, Mail } from "lucide-react";
 import mrinalPhoto from "@/assets/mrinal-photo.jpeg";
-
+import CertificatesSection from "@/components/CertificatesSection";
+import Timeline from "@/components/Timeline";
 const GIF_URL =
   "https://cdn.dribbble.com/userupload/41747295/file/original-36aa18b6d39725078eadce42d08e3055.gif";
 
@@ -146,15 +147,18 @@ const Index = () => {
             <AITerminal />
           </div>
         </section>
+        <Timeline /> 
 
         {/* Projects */}
         <ProjectsSection />
 
         {/* Publications */}
         <PublicationsSection />
+        <CertificatesSection />
 
-        {/* Skills */}
-        <SkillsSection />
+
+        {/* Skills */}h
+        
 
         {/* About / Contact */}
         <section id="about" className="py-20 border-t" style={{ borderColor: "var(--glass-border)" }}>
@@ -177,7 +181,7 @@ const Index = () => {
               <h2 className="text-3xl font-medium tracking-tighter mb-4">Execute Contact</h2>
               <div className="flex flex-col gap-3">
                 {[
-                  { label: "EMAIL", value: "mrinal.choudhary@example.com", href: "mailto:mrinal.choudhary@example.com" },
+                  { label: "EMAIL", value: "mrinal.choudhary@example.com", href: "mailto:choudharymrinal64@gma" },
                   { label: "LINKEDIN", value: "linkedin.com/in/mrinalchoudhary", href: "https://linkedin.com" },
                   { label: "GITHUB", value: "github.com/mrinalchoudhary", href: "https://github.com" },
                 ].map(({ label, value, href }) => (

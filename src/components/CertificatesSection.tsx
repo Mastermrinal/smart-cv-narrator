@@ -9,28 +9,29 @@ type Certificate = {
 
 const CERTIFICATES: Certificate[] = [
   {
-    title: "IIT Bombay Research Internship",
-    issuer: "IIT Bombay",
-    year: "2025",
-    file: "/certificates/inc4_certificate.pdf",
+    title: "Thapar Summer School Certificate",
+    issuer: "Thapar Institute of Technology",
+    year: "2023",
+    file: "public/Certificates/TSS_CERTIFICATE.pdf",
+  },
+
+  {
+    title: "IEEE Research Paper Conference Publication",
+    issuer: "IEEE",
+    year: "2024",
+    file: "public/Certificates/certificate_1.pdf",
   },
   {
-    title: "Tata Steel Internship",
-    issuer: "Tata Steel R&D",
+    title: "IEEE Research Paper Conference Publication",
+    issuer: "IEEE",
     year: "2024",
-    file: "/certificates/certificate_1.pdf",
-  },
-  {
-    title: "Machine Learning Certification",
-    issuer: "Online Certification",
-    year: "2024",
-    file: "/certificates/certificate_2.pdf",
+    file: "public/Certificates/CERTIFICATE_2.pdf",
   },
   {
     title: "Udemy Course Certificate",
     issuer: "Udemy",
-    year: "2023",
-    file: "/certificates/udemy_certificate.pdf",
+    year: "2025",
+    file: "public/Certificates/UC-3be5208a-d9ee-47c9-99c2-3f859f7ff59a.pdf",
   },
 ];
 
