@@ -1,7 +1,7 @@
-import dpsImg from "/smart-cv-narrator/src/assets/dps.jpeg";
-import tietImg from "/smart-cv-narrator/src/assets/tiet.jpeg";
-import iitbImg from "/smart-cv-narrator/src/assets/iitb.jpeg";
-import convoImg from "/smart-cv-narrator/src/assets/convo.jpeg";
+import dpsImg from "../assets/dps.jpeg";
+import tietImg from "../assets/tiet.jpeg";
+import iitbImg from "../assets/iitb.jpeg";
+import convoImg from "../assets/convo.jpeg";
 
 export default function TimelineSection() {
   const timeline = [
