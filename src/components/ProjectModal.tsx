@@ -112,8 +112,7 @@ export const ProjectModal = ({ project, open, onClose }: Props) => {
             {project.pdf && (
               <a
                 href={project.pdf}
-                target="_blank"
-                rel="noopener noreferrer"
+                download
                 className="label-xs px-3 py-2 rounded-sm flex items-center gap-2 transition-all duration-200"
                 style={{ background: "rgba(255,140,0,0.08)", color: "hsl(35,100%,55%)", border: "1px solid rgba(255,140,0,0.25)" }}
               >
