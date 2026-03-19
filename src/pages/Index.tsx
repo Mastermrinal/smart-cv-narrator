@@ -118,7 +118,7 @@ const Index = () => {
               </h1>
               <div className="flex items-center gap-4 mt-6">
                 <a
-                  href="mailto:mrinal@example.com"
+                  href="mailto:choudharymrinal64@gmail.com"
                   className="label-xs px-4 py-2 rounded-sm flex items-center gap-2 transition-all duration-200"
                   style={{
                     background: "hsl(var(--primary))",
@@ -128,12 +128,12 @@ const Index = () => {
                   <Mail size={11} strokeWidth={1.5} />
                   INITIALIZE_CONTACT
                 </a>
-                <a href="https://github.com" target="_blank" rel="noreferrer"
+                <a href="https://github.com/Mastermrinal" target="_blank" rel="noreferrer"
                   className="p-2 rounded-sm transition-all duration-200 hover:bg-white/5"
                   style={{ color: "hsl(var(--muted-foreground))", border: "1px solid var(--glass-border)" }}>
                   <Github size={14} strokeWidth={1.5} />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noreferrer"
+                <a href="https://www.linkedin.com/in/mrinal-choudhary-343785246/" target="_blank" rel="noreferrer"
                   className="p-2 rounded-sm transition-all duration-200 hover:bg-white/5"
                   style={{ color: "hsl(var(--muted-foreground))", border: "1px solid var(--glass-border)" }}>
                   <Linkedin size={14} strokeWidth={1.5} />
