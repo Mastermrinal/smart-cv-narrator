@@ -147,24 +147,11 @@ const Index = () => {
             <AITerminal />
           </div>
         </section>
-        <Timeline /> 
-
-        {/* Projects */}
-        <ProjectsSection />
-
-        {/* Publications */}
-        <PublicationsSection />
-        <CertificatesSection />
-
-
-        {/* Skills */}h
-        
-
-        {/* About / Contact */}
-        <section id="about" className="py-20 border-t" style={{ borderColor: "var(--glass-border)" }}>
+        {/* About */}
+        <section id="about" className="py-16 border-t" style={{ borderColor: "var(--glass-border)" }}>
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <span className="label-xs text-muted-foreground block mb-2">05 / ABOUT</span>
+              <span className="label-xs text-muted-foreground block mb-2">02 / ABOUT</span>
               <h2 className="text-3xl font-medium tracking-tighter mb-4">The Researcher</h2>
               <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                 Mechanical Engineer turned Robotics Researcher. I've always been fascinated by how
@@ -177,7 +164,7 @@ const Index = () => {
               </p>
             </div>
             <div id="contact">
-              <span className="label-xs text-muted-foreground block mb-2">06 / CONTACT</span>
+              <span className="label-xs text-muted-foreground block mb-2">03 / CONTACT</span>
               <h2 className="text-3xl font-medium tracking-tighter mb-4">Execute Contact</h2>
               <div className="flex flex-col gap-3">
                 {[
@@ -196,6 +183,15 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+        <Timeline />
+
+        {/* Projects */}
+        <ProjectsSection />
+
+        {/* Publications */}
+        <PublicationsSection />
+        <CertificatesSection />
 
         {/* Footer */}
         <footer className="py-8 border-t flex items-center justify-between" style={{ borderColor: "var(--glass-border)" }}>
