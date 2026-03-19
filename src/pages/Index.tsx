@@ -168,9 +168,9 @@ const Index = () => {
               <h2 className="text-3xl font-medium tracking-tighter mb-4">Execute Contact</h2>
               <div className="flex flex-col gap-3">
                 {[
-                  { label: "EMAIL", value: "mrinal.choudhary@example.com", href: "mailto:choudharymrinal64@gma" },
-                  { label: "LINKEDIN", value: "linkedin.com/in/mrinalchoudhary", href: "https://linkedin.com" },
-                  { label: "GITHUB", value: "github.com/mrinalchoudhary", href: "https://github.com" },
+                  { label: "EMAIL", value: "choudharymrinal64@gmail.com", href: "mailto:choudharymrinal64@gmail.com" },
+                  { label: "LINKEDIN", value: "linkedin.com/in/mrinal-choudhary-343785246", href: "https://www.linkedin.com/in/mrinal-choudhary-343785246/" },
+                  { label: "GITHUB", value: "github.com/Mastermrinal", href: "https://github.com/Mastermrinal" },
                 ].map(({ label, value, href }) => (
                   <a key={label} href={href} target="_blank" rel="noreferrer"
                     className="glass rounded-inner px-4 py-3 flex items-center justify-between group transition-all duration-200 hover:border-primary"

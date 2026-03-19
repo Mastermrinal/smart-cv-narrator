@@ -94,6 +94,7 @@ const PROJECTS: Project[] = [
     fullDescription: "Industry internship at Tata Steel focused on carbon fiber production via melt spinning. Conducted rheological studies to characterize viscoelastic material behavior, providing data to optimize fiber properties for industrial-scale manufacturing.",
     techStack: ["ANSYS", "Rheometry", "Materials Characterization", "MATLAB", "Creo"],
     outcomes: ["Characterized viscoelastic behavior", "Optimized melt spinning parameters", "Industry-scale process insights", "Data fed into production pipeline"],
+    pdf: "/papers/tata_steel_internship.pdf",
   },
 ];
 
