@@ -48,7 +48,7 @@ const PROJECTS: Project[] = [
     fullDescription: "Research internship at IIT Bombay focused on forecasting energy demand for cooling systems. Modeled Cooling Degree Days across 100 Indian cities using historical and projected climate data (1991–2100). Implemented S-curve, regression, and power law models achieving R² = 0.89.",
     techStack: ["Python", "ARIMA", "GPR", "S-Curve Modeling", "Regression", "Tableau"],
     outcomes: ["R² = 0.89 forecasting accuracy", "100 Indian cities modeled", "Timeline spanning 1991–2100", "Sustainability policy implications"],
-    pdf: "public/papers/IIT_BOMBAY.pdf",
+    pdf: "/papers/IIT_BOMBAY.pdf",
   },
   {
     id: "cnn",
@@ -80,6 +80,7 @@ const PROJECTS: Project[] = [
 • Designed and fabricated prototypes using 3D printing technologies with materials - PLA, TPU, and TPE.`,
     techStack: ["3D Printing", "PLA", "TPU", "TPE", "Prototyping"],
     outcomes: ["Patent application filed (202511074968)", "Prototypes fabricated in PLA/TPU/TPE", "Medical device testing for topical pain relief"],
+    pdf: "/papers/CEEMS_LOA.pdf",
   },
   {
     id: "carbon",
@@ -93,6 +94,7 @@ const PROJECTS: Project[] = [
     fullDescription: "Industry internship at Tata Steel focused on carbon fiber production via melt spinning. Conducted rheological studies to characterize viscoelastic material behavior, providing data to optimize fiber properties for industrial-scale manufacturing.",
     techStack: ["ANSYS", "Rheometry", "Materials Characterization", "MATLAB", "Creo"],
     outcomes: ["Characterized viscoelastic behavior", "Optimized melt spinning parameters", "Industry-scale process insights", "Data fed into production pipeline"],
+    pdf: "/papers/tata_steel_internship.pdf",
   },
 ];
 
