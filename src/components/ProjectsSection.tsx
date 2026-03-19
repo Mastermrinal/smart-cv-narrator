@@ -48,7 +48,7 @@ const PROJECTS: Project[] = [
     fullDescription: "Research internship at IIT Bombay focused on forecasting energy demand for cooling systems. Modeled Cooling Degree Days across 100 Indian cities using historical and projected climate data (1991–2100). Implemented S-curve, regression, and power law models achieving R² = 0.89.",
     techStack: ["Python", "ARIMA", "GPR", "S-Curve Modeling", "Regression", "Tableau"],
     outcomes: ["R² = 0.89 forecasting accuracy", "100 Indian cities modeled", "Timeline spanning 1991–2100", "Sustainability policy implications"],
-    pdf: "public/papers/IIT_BOMBAY.pdf",
+    pdf: "/papers/IIT_BOMBAY.pdf",
   },
   {
     id: "cnn",
