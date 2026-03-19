@@ -80,6 +80,7 @@ const PROJECTS: Project[] = [
 • Designed and fabricated prototypes using 3D printing technologies with materials - PLA, TPU, and TPE.`,
     techStack: ["3D Printing", "PLA", "TPU", "TPE", "Prototyping"],
     outcomes: ["Patent application filed (202511074968)", "Prototypes fabricated in PLA/TPU/TPE", "Medical device testing for topical pain relief"],
+    pdf: "/papers/CEEMS_LOA.pdf",
   },
   {
     id: "carbon",
