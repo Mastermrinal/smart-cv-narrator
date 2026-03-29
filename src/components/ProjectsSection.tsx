@@ -105,7 +105,7 @@ const PROJECTS: Project[] = [
     description: "Personal drone build project — currently under progress. Hands-on hardware assembly and flight controller integration.",
     metrics: [{ label: "STATUS", value: "IN PROGRESS" }, { label: "TYPE", value: "PERSONAL" }, { label: "DOMAIN", value: "ROBOTICS" }],
     year: "2025",
-    image: uavAircraftImg,
+    image: dronePersonalImg,
     fullDescription: "A personal initiative to design and build a custom drone from scratch. The project involves component selection, frame assembly, flight controller programming, and iterative testing. Currently under active development.",
     techStack: ["Arduino", "Flight Controllers", "ESC", "LiPo Batteries", "3D Printing"],
     outcomes: ["Project currently in progress", "Hands-on hardware prototyping", "Flight controller integration"],
