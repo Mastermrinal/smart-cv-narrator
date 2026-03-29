@@ -6,6 +6,7 @@ import { ProjectCard, type Project } from "./ProjectCard";
 import palm from "../assets/palm.png";
 import cnn2 from "../assets/cnn2.png";
 import p from "../assets/p.jpg";
+import dronePersonalImg from "@/assets/drone-personal.png";
 
 const PROJECTS: Project[] = [
   {
