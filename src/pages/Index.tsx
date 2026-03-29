@@ -117,17 +117,6 @@ const Index = () => {
                 Mechanical Design &amp; Machine Learning.
               </h1>
               <div className="flex items-center gap-4 mt-6">
-                <a
-                  href="mailto:choudharymrinal64@gmail.com"
-                  className="label-xs px-4 py-2 rounded-sm flex items-center gap-2 transition-all duration-200"
-                  style={{
-                    background: "hsl(var(--primary))",
-                    color: "hsl(var(--primary-foreground))",
-                  }}
-                >
-                  <Mail size={11} strokeWidth={1.5} />
-                  INITIALIZE_CONTACT
-                </a>
                 <a href="https://github.com/Mastermrinal" target="_blank" rel="noreferrer"
                   className="p-2 rounded-sm transition-all duration-200 hover:bg-white/5"
                   style={{ color: "hsl(var(--muted-foreground))", border: "1px solid var(--glass-border)" }}>
@@ -196,7 +185,7 @@ const Index = () => {
         {/* Footer */}
         <footer className="py-8 border-t flex items-center justify-between" style={{ borderColor: "var(--glass-border)" }}>
           <span className="label-xs text-muted-foreground">MRINAL_CHOUDHARY_OS v1.0 © 2025</span>
-          <span className="label-xs text-muted-foreground">LOC: 19.1334°N 72.9133°E · IIT BOMBAY</span>
+          <span className="label-xs text-muted-foreground">LOC: 28.4744°N 77.5040°E · GREATER NOIDA</span>
         </footer>
       </main>
     </div>
